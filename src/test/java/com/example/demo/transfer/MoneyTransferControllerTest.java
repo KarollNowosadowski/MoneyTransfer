@@ -29,7 +29,7 @@ class MoneyTransferControllerTest {
                     .contentType(MediaType.APPLICATION_JSON)
                     .content(moneyAmount))
             .andExpect(status().isOk())
-            .andExpect(content().string(expectedResponseBody.toString()));
+            .andExpect(content().string(expectedResponseBody));
   }
 
   @Test
@@ -43,7 +43,7 @@ class MoneyTransferControllerTest {
                     .contentType(MediaType.APPLICATION_JSON)
                     .content(moneyAmount))
             .andExpect(status().isOk())
-            .andExpect(content().string(expectedResponseBody.toString()));
+            .andExpect(content().string(expectedResponseBody));
   }
 
   @Test
